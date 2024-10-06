@@ -1,0 +1,20 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    //   A
+    //   B B
+    //   C C C 
+    //   D D D D 
+    //   E E E E E
+    int i,j,n;
+    char ch;
+    ch='A';
+    cin>>n;
+    for(i=1;i<=n;i++){
+        for(j=1;j<=i;j++){
+            cout<<ch<<"\t";
+        }
+        cout<<endl;
+        ch++;
+    }
+}
