@@ -1,0 +1,60 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    // kind of stativc heart work efficint on n=12
+    int n,p,q,fc,fs,fb,fl;
+    //p is used for upper portion
+    //q is used for lower part
+    cout<<"enter the value of n:";
+    cin>>n;
+    p=n/4;
+    fc=p-1;
+    q=(n*3)/4;
+    fs=p+1;
+    fb=p+2;
+    fl=q;
+    
+    
+    for(int i=1;i<=p;i++){
+       
+        for(int c=1;c<=fc;c++){
+            cout<<"  ";
+        }
+        fc--;
+        
+        
+        for(int s1=1;s1<=fs;s1++){
+            cout<<"* ";
+        }
+        
+        
+        for(int b=1;b<=fb;b++){
+            cout<<"  ";
+        }
+        fb=fb-2;
+        
+        for(int s1=1;s1<=fs;s1++){
+            cout<<"* ";
+        }
+        fs=fs+2;
+        cout<<endl;
+        
+    }
+    
+    for(int k=1;k<=q;k++){
+       if(k>1){
+       for(int a=1;a<k;a++){
+           cout<<"  ";
+       }
+       }
+        
+       for(int j=1;j<=(fl*2)-1;j++){
+        cout<<"* ";
+        }
+        fl--;
+        cout<<endl;
+    }
+    
+    return 0;
+    
+}
